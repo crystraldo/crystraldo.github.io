@@ -1,4 +1,3 @@
-# Official repo for StableLLaVA
 **StableLLaVA: Enhanced Visual Instruction Tuning with Synthesized Image-Dialogue Data**
 
 Yanda Li, [Chi Zhang](https://icoz69.github.io/), Gang Yu, Zhibin Wang, Bin Fu, Guosheng Lin, Chunhua Shen, Ling Chen, Yunchao Wei
