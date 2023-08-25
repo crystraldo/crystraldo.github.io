@@ -18,8 +18,14 @@ Yanda Li, [Chi Zhang](https://icoz69.github.io/), Gang Yu, Zhibin Wang, Bin Fu, 
 The prompt-dialogue of varies abilities are saved in [dataset](https://github.com/crystraldo/StableLLAVA/tree/main/dataset).
 
 Firstly, use [SD-XL](https://github.com/crystraldo/StableLLAVA/blob/main/stable_diffusion.py) to generate images as training images. It will take ~13s for generating one image on V100.
+```
+python stable_diffusion.py --prompt_path dataset/animal.json --save_path train_set/animal/
+```
 
 Second, use [data_to_llava](https://github.com/crystraldo/StableLLAVA/blob/main/data_to_llava.py) to convert dataset format for LLaVA model training.
+```
+python data_to_llava.py --image_path train_set/animal/ --prompt_path dataset/animal.json --save_path train_ano/animal.json
+```
 
 For training model, you can use LLaVA official code [LLaVA](https://github.com/haotian-liu/LLaVA)
 
